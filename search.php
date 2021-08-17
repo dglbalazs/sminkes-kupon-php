@@ -20,7 +20,7 @@
                 $newKey = '';
             }
 
-            $sql = "SELECT * FROM wp_woocommerce_order_items WHERE order_item_name='$newKey'";
+            $sql = "SELECT * FROM wp_woocommerce_order_items WHERE order_item_type='coupon' AND order_item_name='$newKey'";
             
             $resp = mysqli_query($connection,$sql);
             $queryResult = mysqli_num_rows($resp);
@@ -50,7 +50,7 @@
             }
 
             mysqli_free_result($resp);
-            
+
             mysqli_close($connection);
 
         } else {
