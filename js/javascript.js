@@ -13,7 +13,8 @@ window.addEventListener('load', function(e)
             {
                 if (obj_iFrame.classList.contains('hidden'))
                 {
-                    obj_iFrame.classList.remove('hidden').add('visible');
+                    obj_iFrame.classList.remove('hidden');
+                    obj_iFrame.classList.add('visible');
                 }
             }
         });
