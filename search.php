@@ -46,7 +46,7 @@
                 echo "</table>";
             } else {
                 echo "<div style='font-size:1.5rem;'><b>Sajnos, nincs találat.</b><br/><br/>Kérjük, ellenőrizze, hogy helyesen adta-e meg a titkosított azonosítót, amit kapott.
-                <br/>Amennyiben <font color='green'>IGEN</font>, és a keresés mégsem hozott eredményt, úgy előfordulhat, hogy kuponkódjával még nem regisztráltak.</font>";
+                <br/>Amennyiben <font color='green'><b>IGEN</b></font>, és a keresés mégsem hozott eredményt, úgy előfordulhat, hogy kuponkódjával még nem regisztráltak.</div>";
             }
 
             mysqli_free_result($resp);
